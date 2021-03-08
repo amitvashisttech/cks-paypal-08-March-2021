@@ -24,3 +24,9 @@ cp etcd etcdctl /usr/local/bin/
 ```sh
 etcd
 ```
+
+
+#### Step 3: Open a new terminal & put some date in ETCD
+```sh
+etcdctl put demo "Your Awesome."
+```
