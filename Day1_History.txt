@@ -1,0 +1,66 @@
+    1  git clone https://github.com/amitvashisttech/cks-paypal-08-March-2021.git
+    2  ls
+    3  cd cks-paypal-08-March-2021/
+    4  ls
+    5  cd ..
+    6  ls
+    7  cd cks-paypal-08-March-2021/
+    8  ls
+    9  git pull 
+   10  ls
+   11  cd Docker/
+   12  ls
+   13  hostname
+   14  hostname -i 
+   15  hostname -f
+   16  ip addr 
+   17  ls
+   18  cd ..
+   19  l
+   20  ld 
+   21  ld
+   22  ls 
+   23  cd Docker/
+   24  ls
+   25  cd 00-Setup/
+   26  ls
+   27  vim install-docker.sh 
+   28  ls
+   29  ./install-docker.sh 
+   30  docker version 
+   31  ls
+   32  cd ..
+   33  ls
+   34  git logs 
+   35  git log
+   36  ls
+   37  docker version 
+   38  systemctl status docker 
+   39  docker run ubuntu echo "Welcome to Docker Demo"
+   40  docker run ubuntu echo "Welcome to Docker Demo - Test 2"
+   41  docker ps 
+   42  docker container ls 
+   43  docker container ls -a 
+   44  ls
+   45  docker images 
+   46  docker pull ubuntu:16.04
+   47  docker images 
+   48  docker ps -a 
+   49  docker rm 2bb303a74ac6
+   50  docker ps -a 
+   51  docker images 
+   52  ls
+   53  docker run ubuntu echo "Welcome to Docker Demo"
+   54  docker ps 
+   55  docker ps -a 
+   56  docker ps 
+   57  docker ps -a
+   58  docker ps -aq
+   59  docker rm $(docker ps -aq)
+   60  docker ps -aq
+   61  docker ps -a
+   62  docker images 
+   63  docker images -q
+   64  ls
+   65  history 
+   66  history > Day1_History.txt
