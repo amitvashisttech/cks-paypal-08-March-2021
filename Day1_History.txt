@@ -201,3 +201,78 @@
   201  cd ..
   202  ls
   203  history > Day1_History.txt 
+  204  git add . ; git commit -m "Day1_History.txt"; git push 
+  205  ils
+  206  ls
+  207  sl
+  208  ls
+  209  docker network ls 
+  210  docker network inspect 3b2be4666867
+  211  docker ps 
+  212  docker kill  $(docker ps -qa)
+  213  docker rm  $(docker ps -qa)
+  214* 
+  215  docker network inspect 3b2be4666867
+  216  ip addr 
+  217  route -n 
+  218  docker images 
+  219  docker run -d mytestapache-img:v1 
+  220  docker ps 
+  221  docker network inspect 3b2be4666867
+  222  ls
+  223  docker ps 
+  224  docker inspect 33b0562f7208
+  225  curl 172.17.0.2
+  226  route -n 
+  227  docker ps 
+  228  curl 172.17.0.2
+  229  ls
+  230  cd Docker/
+  231  ls
+  232  cd 01-DockerImages/
+  233  ls
+  234  cd apache/
+  235  ls
+  236  vim Dockerfile 
+  237  ls
+  238  docker images 
+  239  docker build -t mytestapache-img:v2
+  240  docker build -t mytestapache-img:v2 .
+  241  ls
+  242  docker run -d --name test2 mytestapache-img:v2 
+  243  docker ps 
+  244  docker inspect 80/tcp
+  245  docker inspect test2
+  246  curl 172.17.0.3
+  247  ls
+  248  netstat -tulnp 
+  249  docker run -d --name test3 -P mytestapache-img:v2 
+  250  docker ps 
+  251  netstat -tulnp 
+  252  ip addr 
+  253  netstat -tulnp 
+  254  systemctl status docker 
+  255  docker run -d --name test4 -P mytestapache-img:v2 
+  256  docker run -d --name test5 -P mytestapache-img:v2 
+  257  docker ps 
+  258  docker run -d --name test6 -p 8080:80 mytestapache-img:v2 
+  259  docker ps 
+  260  docker run -d --name test7 -p 8080:80 mytestapache-img:v2 
+  261  netstat -tulnp 
+  262  docker run -d --name test8 -p 8081:80 mytestapache-img:v2 
+  263  docker ps 
+  264  docker inspect 54fbf7e7d570
+  265  docker stop  54fbf7e7d570
+  266  docker run -d --name test9 mytestapache-img:v2 
+  267  docker run -d --name test10 mytestapache-img:v2 
+  268  docker start  54fbf7e7d570
+  269  docker inspect  54fbf7e7d570
+  270  docker ps 
+  271  ls
+  272  cd ..
+  273  ls
+  274  cd ..
+  275  ls
+  276  cd ..
+  277  ls
+  278  history > Day1_History.txt
