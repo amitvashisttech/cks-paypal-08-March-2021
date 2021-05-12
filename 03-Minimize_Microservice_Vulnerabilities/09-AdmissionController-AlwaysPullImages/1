@@ -22,10 +22,10 @@ Add following within kube-apiserver manifest to enable admission controller
 AlwaysPullImages
 --enable-admission-plugins=PodSecurityPolicy,AlwaysPullImages
 ```
-#### Delete Old POD:
+#### POD Manifest:
 ```sh
 kubectl delete pod hello-world
-```
+
 #### POD Manifest:
 ```sh
 nano hello-world-new.yaml

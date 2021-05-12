@@ -5,6 +5,7 @@ https://hub.docker.com/_/hello-world
 #### Create a Dockerfile:
 ```sh
 mkdir /root/image-policy
+cd /root/image-policy
 ```
 ```sh
 nano Dockerfile

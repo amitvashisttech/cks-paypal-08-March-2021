@@ -56,7 +56,7 @@ spec:
   - min: 0
     max: 65535
   hostIPC: true
-  hostPID: true
+  hostPID: false
   runAsUser:
     rule: 'RunAsAny'
   seLinux:
@@ -65,4 +65,10 @@ spec:
     rule: 'RunAsAny'
   fsGroup:
     rule: 'RunAsAny'
+```
+
+#### Try Once Again & Expected OutCome: 
+```
+kubectl apply  -f host-p id.yaml
+Error from server (Forbidden): error when creating "host-pid.yaml": pods "hostpid" is forbidden: PodSecurityPolicy: unable to admit pod: [spec.securityContext.hostPID: Invalid value: true: Host PID is not allowed to be used]
 ```

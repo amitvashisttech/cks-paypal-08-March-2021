@@ -50,9 +50,29 @@ ctr snapshot mounts nginx-rootfs/ nginx | bash
 cd /root
 runc spec
 ```
-Modify the config.yaml to include the name of nginx-rootfs
+
+
+#### Modify the config.yaml to include the name of nginx-rootfs
 
 #### Create a container from runc:
 ```sh
 runc run mycontainer
+```
+
+#### From Next Tab 
+```
+runc list
+```
+
+
+#### Modify the config.yaml to for USERID & GROUPID
+
+#### Create a container from runc:
+```sh
+runc run mycontainer2
+```
+
+#### From Next Tab 
+```
+runc list
 ```

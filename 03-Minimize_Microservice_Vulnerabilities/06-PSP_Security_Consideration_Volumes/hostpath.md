@@ -1,3 +1,13 @@
+#### Allow John user Volume Priv. 
+```
+kubectl apply -f rbac.yaml
+```
+
+#### Login with John 
+```
+su - john 
+```
+
 #### Create a HostPath Volume:
 ```sh
 nano host-path.yaml
@@ -40,7 +50,7 @@ spec:
   allowedCapabilities:
   - '*'
   volumes:
-  - configMap
+  -  configMap
   -  downwardAPI
   -  emptyDir
   -  persistentVolumeClaim
@@ -60,4 +70,10 @@ spec:
     rule: 'RunAsAny'
   fsGroup:
     rule: 'RunAsAny'
+```
+
+#### Now once again try to create a pod with John ( Expected ) 
+```
+kubectl apply -f host-pat h.yaml
+Error from server (Forbidden): error when creating "host-path.yaml": pods "hostpath-pod" is forbidden: PodSecurityPolicy: unable to admit pod: [spec.volumes[0]: Invalid value: "hostPath": hostPath volumes are not allowed to be used]
 ```
